@@ -1,8 +1,7 @@
+// ignore_for_file: unrelated_type_equality_checks
+
 import 'package:flutter/material.dart';
 import 'package:scouting_app_865_2023/utils/gsheets.dart';
-
-
-
 
 enum Piece { none, cone, cube }
 
@@ -37,7 +36,6 @@ class MyAppState extends ChangeNotifier {
   // Endgame Page Data
   Position endgamePosition = Position.none;
 
-
   // Resets All Data
   // The function is here to easily check that it includes all the variables
   void reset() {
@@ -62,7 +60,6 @@ class MyAppState extends ChangeNotifier {
 
     endgamePosition = Position.none;
   }
-  
 
   void saveToSheets() {
     Gsheets.addRow([
@@ -95,10 +92,6 @@ class MyAppState extends ChangeNotifier {
       endgamePosition == Position.docked ? 1 : 0,
       endgamePosition == Position.engaged ? 1 : 0,
       commentController.text,
-
-      
-
-      
     ]);
   }
 }

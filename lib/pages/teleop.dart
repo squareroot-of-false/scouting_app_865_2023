@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 import '../state.dart';
 import '../widgets/enum_chip.dart';
 import '../widgets/toggle_chip.dart';
-import '../widgets/scoring_legend.dart';
 
 class TeleopPage extends StatefulWidget {
   const TeleopPage({super.key});
